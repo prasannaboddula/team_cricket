@@ -13,19 +13,19 @@ public class Player{
         this.role = role;
     }
 
-    public int getPlayerId(){
+    public int getplayerId(){
         return playerId;
     }
 
-    public void setPlayerId(int playerId){
+    public void setplayerId(int playerId){
         this.playerId = playerId;
     }
 
-    public String getPlayerName(){
+    public String getplayerName(){
         return playerName;
     }
 
-    public void setPlayerName(String playerName){
+    public void setplayerName(String playerName){
         this.playerName = playerName;
     }
 
@@ -37,11 +37,11 @@ public class Player{
         this.jerseyNumber = jerseyNumber;
     }
 
-    public String getRoleName(){
+    public String getrole(){
         return role;
     }
 
-    public void setRoleName(String role){
+    public void setrole(String role){
         this.role = role;
     }
 
