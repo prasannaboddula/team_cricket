@@ -18,6 +18,7 @@ public class PlayerService implements PlayerRepository {
 
     private static HashMap<Integer, Player> team = new HashMap<>();
     int uniquePlayerId = 12;
+	private Player existingPlayer;
     public PlayerService() {
         team.put(1, new Player(1, "Alexander", 5, "All-rounder"));
         team.put(2, new Player(2, "Benjamin", 3, "All-rounder"));
@@ -72,7 +73,7 @@ public class PlayerService implements PlayerRepository {
 
     @Override
     public Player updatePlayer(int playerId,Player player){
-        Player existingPlayer = team.get(playerId);
+        existingPlayer = team.get(playerId);
 
         if(existingPlayer == null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
@@ -87,7 +88,7 @@ public class PlayerService implements PlayerRepository {
             existingPlayer.setrole(player.getrole());
         }
 
-        return player;
+        return existingPlayer;
     }
     
 }   
