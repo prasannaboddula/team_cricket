@@ -56,7 +56,7 @@ public class PlayerService implements PlayerRepository {
 
     @Override
     public ArrayList<Player> getPlayers(){
-        Collection playersCollection = team.values();
+        Collection<Player> playersCollection = team.values();
         ArrayList<Player> players = new ArrayList<>(playersCollection);
         return players;
     }

@@ -32,7 +32,7 @@ public class PlayerController{
         return playerService.getPlayers();
     }
 
-    @GetMapping("/books/{bookId}")
+    @GetMapping("/players/{playerId}")
     public Player getPlayerById(@PathVariable("playerId") int playerId) {
         return playerService.getPlayerById(playerId);
     }
